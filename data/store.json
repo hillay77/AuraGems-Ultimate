@@ -1,0 +1,350 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Celestial Pearl Necklace",
+      "category": "Necklaces",
+      "price": 185000,
+      "oldPrice": null,
+      "stock": 12,
+      "badge": "New",
+      "image": "/uploads/1786002504786.jpeg",
+      "rating": 4.7,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 2,
+      "name": "Aurelia Drop Earrings",
+      "category": "Earrings",
+      "price": 95000,
+      "oldPrice": 125000,
+      "stock": 20,
+      "badge": "Sale",
+      "image": "/uploads/1786002516035.jpeg",
+      "rating": 4.8,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 3,
+      "name": "Golden Muse Chain",
+      "category": "Chains",
+      "price": 145000,
+      "oldPrice": null,
+      "stock": 15,
+      "badge": "Featured",
+      "image": "/uploads/1786002529367.jpeg",
+      "rating": 4.9,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 4,
+      "name": "Eternal Halo Ring",
+      "category": "Rings",
+      "price": 120000,
+      "oldPrice": 155000,
+      "stock": 9,
+      "badge": "Bestseller",
+      "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85",
+      "rating": 5,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 5,
+      "name": "Sculpted Aura Cuff",
+      "category": "Arm Cuffs",
+      "price": 110000,
+      "oldPrice": 145000,
+      "stock": 6,
+      "badge": "Sale",
+      "image": "/uploads/1786002539845.jpeg",
+      "rating": 4.7,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 6,
+      "name": "Serenity Bangle Set",
+      "category": "Bracelets & Bangles",
+      "price": 160000,
+      "oldPrice": null,
+      "stock": 18,
+      "badge": "New",
+      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85",
+      "rating": 4.8,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 7,
+      "name": "Midnight Bloom Eau de Parfum",
+      "category": "Perfumes",
+      "price": 220000,
+      "oldPrice": 275000,
+      "stock": 11,
+      "badge": "Sale",
+      "image": "/uploads/1786002551640.jpeg",
+      "rating": 4.9,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 8,
+      "name": "Noir Satin Evening Dress",
+      "category": "Ladies Wear",
+      "price": 320000,
+      "oldPrice": null,
+      "stock": 6,
+      "badge": "Limited",
+      "image": "/uploads/1786002461893.jpeg",
+      "rating": 5,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 9,
+      "name": "Luna Layered Necklace",
+      "category": "Necklaces",
+      "price": 175000,
+      "oldPrice": 210000,
+      "stock": 14,
+      "badge": "Sale",
+      "image": "/uploads/1786002621285.jpeg",
+      "rating": 4.7,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 10,
+      "name": "Radiant Arc Earrings",
+      "category": "Earrings",
+      "price": 105000,
+      "oldPrice": null,
+      "stock": 17,
+      "badge": "New",
+      "image": "https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=900&q=85",
+      "rating": 4.8,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 11,
+      "name": "Velvet Rose Parfum",
+      "category": "Perfumes",
+      "price": 195000,
+      "oldPrice": 235000,
+      "stock": 10,
+      "badge": "Offer",
+      "image": "/uploads/1786002673530.jpeg",
+      "rating": 4.9,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 12,
+      "name": "Signature Gold Ring",
+      "category": "Rings",
+      "price": 135000,
+      "oldPrice": null,
+      "stock": 16,
+      "badge": "Bestseller",
+      "image": "/uploads/1786002694343.jpeg",
+      "rating": 5,
+      "description": "A refined AuraGems piece curated for confident everyday elegance."
+    },
+    {
+      "id": 13,
+      "rating": 5,
+      "image": "/uploads/1786002422282.jpeg",
+      "name": "Watch",
+      "category": "Necklaces",
+      "price": 1999,
+      "oldPrice": null,
+      "stock": 1,
+      "badge": "",
+      "description": ""
+    }
+  ],
+  "categories": [
+    "Necklaces",
+    "Earrings",
+    "Chains",
+    "Rings",
+    "Arm Cuffs",
+    "Bracelets & Bangles",
+    "Perfumes",
+    "Ladies Wear"
+  ],
+  "orders": [
+    {
+      "id": "AGS-7A0E23BD",
+      "customer": {
+        "name": "Denis Sserugo",
+        "email": "denisjnr17@gmail.com",
+        "phone": "0788818951",
+        "address": "Grant Village",
+        "city": "Jinja"
+      },
+      "items": [
+        {
+          "id": 5,
+          "name": "Sculpted Aura Cuff",
+          "price": 110000,
+          "qty": 2,
+          "lineTotal": 220000
+        }
+      ],
+      "subtotal": 220000,
+      "discount": 0,
+      "total": 220000,
+      "coupon": null,
+      "currency": "UGX",
+      "status": "Pending",
+      "paymentStatus": "Dev pending",
+      "paymentReference": null,
+      "trackingToken": "f2756196ad65bc53efeebb09c9883749f2d4f3b11fba596f66e5546d1372f765",
+      "createdAt": "2026-08-20T06:16:49.341Z",
+      "tracking": [
+        {
+          "status": "Order received",
+          "at": "2026-08-20T06:16:49.341Z"
+        }
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "name": "Denis Sserugo",
+      "email": "denisjnr17@gmail.com",
+      "phone": "0788818951",
+      "address": "Grant Village",
+      "city": "Jinja",
+      "id": 1
+    }
+  ],
+  "coupons": [
+    {
+      "code": "AURA10",
+      "value": 10,
+      "active": true
+    }
+  ],
+  "newsletter": [
+    "denisjnr17@gmail.com"
+  ],
+  "contacts": [],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Amina K.",
+      "rating": 5,
+      "text": "Beautiful presentation and a refined finish.",
+      "approved": true
+    },
+    {
+      "id": 2,
+      "name": "Joan M.",
+      "rating": 5,
+      "text": "Easy ordering and helpful delivery updates.",
+      "approved": true
+    },
+    {
+      "id": 3,
+      "name": "Ruth N.",
+      "rating": 5,
+      "text": "A dependable place for elegant gifts.",
+      "approved": true
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "title": "Radiant Beginnings",
+      "subtitle": "Motion 1 brings fresh energy and luminous style.",
+      "button": "Shop Now",
+      "image": "/images/motion-1.jpeg",
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Elegant Movement",
+      "subtitle": "Motion 2 showcases graceful, modern glamour.",
+      "button": "Browse Collection",
+      "image": "/images/motion-2.jpeg",
+      "active": true
+    },
+    {
+      "id": 3,
+      "title": "Style in Every Detail",
+      "subtitle": "Fresh fashion, refined fragrance and modern accessories.",
+      "button": "New Arrivals",
+      "image": "/images/motion-3.jpeg",
+      "active": true
+    },
+    {
+      "id": 4,
+      "title": "Effortless Luxury",
+      "subtitle": "Beautiful pieces that bring a polished finish to every look.",
+      "button": "Shop Collections",
+      "image": "/images/motion-4.jpeg",
+      "active": true
+    },
+    {
+      "id": 5,
+      "title": "Discover Timeless Elegance",
+      "subtitle": "Premium jewelry, perfumes and fashion for every expression of you.",
+      "button": "Shop Now",
+      "image": "/images/motion-5.jpeg",
+      "active": true
+    },
+    {
+      "id": 6,
+      "title": "The Golden Hour Edit",
+      "subtitle": "Statement details that move beautifully from day into evening.",
+      "button": "Explore Jewelry",
+      "image": "/images/motion-6.jpeg",
+      "active": true
+    },
+    {
+      "id": 7,
+      "title": "Luminous Motion",
+      "subtitle": "Motion 7 brings rich warmth and bright allure.",
+      "button": "Discover More",
+      "image": "/images/motion-7.jpeg",
+      "active": true
+    },
+    {
+      "id": 8,
+      "title": "Radiant Momentum",
+      "subtitle": "Motion 8 completes the gallery with polished elegance.",
+      "button": "View Collection",
+      "image": "/images/motion-8.jpeg",
+      "active": true
+    }
+  ],
+  "content": {
+    "brand": "AuraGems & Styles",
+    "handle": "aura.gemsandstyles",
+    "announcement": "Free delivery on selected Kampala orders",
+    "about": "AuraGems curates elegant accessories and fashion with quality, confidence and accessible luxury.",
+    "email": "hello@auragems.@gmail.com",
+    "phone": "+256 744 240 072",
+    "address": "Kampala, Uganda",
+    "whatsapp": "256744240072",
+    "social": {
+      "instagram": "aura.gemsandstyles",
+      "facebook": "aura.gemsandstyles",
+      "tiktok": "aura.gemsandstyles"
+    },
+    "shopBanners": [
+      {
+        "id": 1787205844991,
+        "image": "/uploads/1787205844982-8e12130b.jpeg",
+        "title": "Chains",
+        "subtitle": "",
+        "button": "",
+        "active": true
+      },
+      {
+        "id": 1787205672996,
+        "image": "/uploads/1787205684804-936a5be1.jpeg",
+        "title": "pin",
+        "subtitle": "",
+        "button": "",
+        "active": true
+      }
+    ]
+  }
+}

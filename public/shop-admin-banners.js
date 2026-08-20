@@ -1,0 +1,14 @@
+(function(){
+  const api=async(url,options={})=>{const headers=options.body instanceof FormData?{}:{'Content-Type':'application/json'};const response=await fetch(url,{...options,headers:{...headers,...options.headers}});const data=await response.json().catch(()=>({}));if(response.status===401)location.replace('/admin');if(!response.ok)throw Error(data.error||'Request failed');return data};
+  let data={};
+  const list=()=>data.content&&Array.isArray(data.content.shopBanners)?data.content.shopBanners:[];
+  const escapeHtml=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  async function saveContent(){await api('/api/admin/content',{method:'PUT',body:JSON.stringify(data.content)});data=await api('/api/admin/data');render()}
+  function render(){const banners=list();panel.innerHTML=`<button class="btn" onclick="editShopBanner()">Add Shop Banner</button><table><tr><th>Image</th><th>Title</th><th>Subtitle</th><th>Active</th><th></th></tr>${banners.map(b=>`<tr><td><img src="${escapeHtml(b.image)}" width="110" height="65" style="object-fit:cover"></td><td>${escapeHtml(b.title)}</td><td>${escapeHtml(b.subtitle)}</td><td>${b.active?'Yes':'No'}</td><td><button onclick="editShopBanner(${b.id})">Edit</button> <button onclick="deleteShopBanner(${b.id})">Delete</button></td></tr>`).join('')}</table>`}
+  window.editShopBanner=async id=>{const banner=list().find(item=>item.id===id)||{};const form=dlgBanner.querySelector('form');form.reset();['id','image','title','subtitle','button'].forEach(key=>form[key].value=banner[key]||'');form.active.checked=!!banner.active;dlgBanner.showModal()};
+  window.saveShopBanner=async event=>{event.preventDefault();const form=event.target,fields=new FormData(form),id=Number(fields.get('id')),file=fields.get('file');let image=fields.get('image');if(file&&file.size){const upload=new FormData();upload.append('image',file);const result=await api('/api/admin/upload',{method:'POST',body:upload});image=result.url}if(!image)return alert('Attach an image');const banners=list(),record={id:id||Date.now(),image,title:fields.get('title'),subtitle:fields.get('subtitle'),button:fields.get('button'),active:form.active.checked};const index=banners.findIndex(item=>item.id===id);if(index<0)banners.unshift(record);else banners[index]=record;data.content.shopBanners=banners;await saveContent();dlgBanner.close()};
+  window.deleteShopBanner=async id=>{if(!confirm('Delete this Shop banner?'))return;data.content.shopBanners=list().filter(item=>item.id!==id);await saveContent()};
+  window.initShopBanners=async()=>{data=await api('/api/admin/data');render()};
+  document.addEventListener('DOMContentLoaded',()=>{window.initBanners=window.initShopBanners;window.saveBanner=window.saveShopBanner;window.delBanner=window.deleteShopBanner;window.initShopBanners()});
+    setTimeout(()=>{if(window.initShopBanners)window.initShopBanners()},500);
+})();
